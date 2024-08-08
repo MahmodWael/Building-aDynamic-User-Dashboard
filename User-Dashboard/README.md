@@ -1,6 +1,3 @@
-# ng-fire :metal:
-
-A simple application build with Angular and Firebase for learning purposes.
 
 ## Features
 
@@ -19,15 +16,7 @@ A simple application build with Angular and Firebase for learning purposes.
         -   [x] update profile (displayName, photoURL)
         -   [x] update Firestore data
         -   [ ] user roles
--   [ ] blogging
--   [ ] comments
--   [ ] photo gallery
--   [ ] private chat
--   [ ] notifications
-
-## Getting started
-
-### Setup Firebase SDK
+ Setup Firebase SDK
 
 Create `src/environments/firebase.ts` file and add your firebase config
 
