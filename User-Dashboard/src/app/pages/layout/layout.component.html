@@ -1,0 +1,9 @@
+<mat-sidenav-container (backdropClick)="toggle()">
+    <mat-sidenav #sidenav (keydown.escape)="toggle()" mode="over">
+        <app-sidebar></app-sidebar>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

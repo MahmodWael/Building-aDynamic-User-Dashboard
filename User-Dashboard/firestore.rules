@@ -1,0 +1,28 @@
+rules_version = '2';
+service cloud.firestore {
+    match /databases/{database}/documents {
+      
+        match /users/{userId} {
+            allow read: if true;
+            allow write: if belongsTo(userId); 
+        }
+
+        match /posts/{postId} {
+            allow read: if true;
+            allow write: if isAuthor(); 
+        }
+
+        match /{document=**} {
+            allow read, write: if false;
+        }
+        
+        function belongsTo(userId) {
+            return request.auth.uid == userId
+        }
+
+        function isAuthor() {
+            return resource == null
+            && request.resource.data.authorId == request.auth.uid
+        }
+    }
+}
