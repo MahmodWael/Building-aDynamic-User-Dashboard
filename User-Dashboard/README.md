@@ -1,20 +1,19 @@
-## Features
-authentication
-email auth
-social media logins
-passwordless auth
-reset password
-link providers
-annonymous accounts
-user management
-user list
-user detail
-user settings (WIP)
-update email
-update profile (displayName, photoURL)
-update Firestore data
-user roles
-
+## Features,
+authentication,
+email auth,
+social media logins,
+passwordless auth,
+reset password,
+link providers,
+annonymous accounts,
+user management,
+user list,
+user detail,
+user settings (WIP),
+update email,
+update profile (displayName, photoURL),
+update Firestore data,
+user roles,
  Setup Firebase SDK
 
 Create `src/environments/firebase.ts` file and add your firebase config
